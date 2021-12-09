@@ -1,0 +1,321 @@
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background: rgb(180, 243, 243);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.telefono {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  display: none;
+}
+
+.container {
+  margin: auto;
+  overflow: hidden;
+  background: rgb(61, 54, 47);
+}
+#tituloPrincipal{
+  text-align: center;
+  font-size: 7rem;
+}
+.container ul {
+  padding: 0px;
+}
+
+.container ul li {
+  float:left ;
+  list-style: none;
+  width: 22%;
+  background: rgb(26, 26, 26);
+  margin: 20px 0px 20px 15px;
+  border: 0.3rem solid rgb(26, 26, 26);
+  box-sizing: border-box;
+}
+
+.container ul li div {
+  margin-bottom: 0.3rem;
+}
+.container ul li div.portal {
+  margin-bottom: 0rem;
+}
+
+.tituloNombre {
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 4.2rem;
+}
+
+.tituloRich{
+  color: rgb(255, 255, 255);
+  background: rgb(43, 43, 43);
+}
+.tituloKiller{
+  color: rgb(22, 22, 22);
+  background: rgb(255, 255, 255);
+}
+.tituloVandal{
+  color: rgb(68, 42, 0);
+  background: rgb(0, 179, 170);
+}
+.tituloKaky{
+  color: rgb(0, 0, 0);
+  background: rgb(255, 169, 169);
+}
+
+.imagen {
+  width: 100%;
+  height: 8rem;
+  line-height: 50px;
+  background-size: cover;
+}
+
+.imagenRich{
+  
+  background-image: url(/img/rich.jpg);
+  background-position-y: -5rem;
+
+}
+
+.titulo {
+  width: 100%;
+  background: rgb(255, 217, 0);
+  text-align: center;
+  color: black;
+  font-size: 2.4rem;
+}
+
+.container ul li .vida {
+  width: 100%;
+  background: rgb(32, 32, 32);
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+  height: 3rem;
+  display: flex;
+}
+.vida img{
+  width: 25rem;
+  display: block;
+  margin:auto;
+}
+ti {
+  width: 16%;
+  border: 0rem solid rgb(63, 63, 63);
+  display: inline-block;
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+  padding:1rem 0rem;
+}
+
+div.noenchant {
+  color: rgba(255, 255, 255, 0);
+}
+img.noimg {
+  opacity: 0;
+}
+img.grayimg {
+  filter: grayscale(1);
+}
+ti img {
+  width: 3rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tiVacio {
+  border: 0rem;
+  height: 1rem;
+  display: none;
+}
+div.minerales,div.curacion,div.nether,div.portal,div.misc,div.pociones,div.inventario {
+  width: 100%;
+  background: rgb(32, 32, 32);
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  padding: 1rem 0rem;
+  
+  justify-content: center;
+  align-items: center;
+}
+div.portal {
+  height: 4.5rem;
+  width: 50%;
+}
+div.pociones,div.inventario{
+  background: rgb(26, 26, 26);
+}
+
+div.minerales img, div.curacion img,div.nether img,div.portal img,div.misc img,div.pociones img,div.inventario img{
+  width: 2.5rem;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 0.3rem;
+}
+
+
+div.misc{
+  height:5rem;
+}
+div.misc img{
+  width: 3.5rem;
+}
+
+div.inventario{
+  cursor: pointer;
+}
+
+
+div.minerales img:nth-child(1), div.curacion img:nth-child(1), div.nether img:nth-child(1),div.pociones img:nth-child(1),div.inventario img:nth-child(1){
+  margin-left: 0rem;
+}
+@media screen and (max-width: 1250px) {
+  .container ul li {
+    width: 45%;
+    margin-left: 1rem;
+  }
+}
+div#NOMARGIN{
+  margin-bottom: 0rem;
+  padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 0px;
+  }
+  .container ul li {
+    float: none;
+    width: 80%;
+    margin: 40px auto;
+  }
+
+  .telefono {
+    display:inline-block;
+  }
+}
+
+
+
+
+
+
+#kiko-slider{
+  font-family: sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#kiko-slider > ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#kiko-slider > ul.slider{
+  position: relative;
+  width: 100%;
+}
+
+#kiko-slider > ul.slider h1{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  left: 50%;
+  top: 10rem;
+  transform: translate(-50%, -50%);
+}
+
+#kiko-slider > ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+}
+
+
+#kiko-slider > ul.slider li:first-child {
+    opacity: 0; 
+}
+
+#kiko-slider > ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+#kiko-slider > .menu{
+  text-align: center;
+  margin: 20px;
+}
+
+#kiko-slider > .menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+#kiko-slider > .menu li img{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border: 0.3rem solid #ccbe00;
+  border-radius: 20%;
+  margin: 1rem;
+  width: 5rem;
+}
+
+.stats {
+  display: block;
+  list-style: none;
+  width: 40rem;
+  background: rgb(26, 26, 26);
+  margin-bottom: 2rem;;
+  border: 0.3rem solid rgb(26, 26, 26);
+  box-sizing: border-box;
+}
+
+.stats > .titulo {
+  background: rgb(32, 32, 32);
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+ 
+}
+
+
+.espacioBlanco{
+  height: 4rem;
+}
+/**tr.armadura > ti 
+  margin-bottom: 12rem;
+
+**/
+
+.imgIzquierda {
+  height: 40rem;
+}
+
+.testFlex{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.stats>div{
+  padding: 0.5rem 0rem;
+}
