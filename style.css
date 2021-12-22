@@ -2,7 +2,8 @@ html {
   font-size: 62.5%;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background: rgb(180, 243, 243);
+    background-image: url(/img/fondo.png);
+    background-size: cover;
 }
 * {
   margin: 0;
@@ -10,49 +11,17 @@ html {
   box-sizing: border-box;
 }
 
-.telefono {
-  font-size: 2rem;
-  color: white;
-  text-align: center;
-  display: none;
-}
-
-.container {
-  margin: auto;
-  overflow: hidden;
-  background: rgb(61, 54, 47);
-}
 #tituloPrincipal{
   text-align: center;
-  font-size: 7rem;
-}
-.container ul {
-  padding: 0px;
-}
-
-.container ul li {
-  float:left ;
-  list-style: none;
-  width: 22%;
-  background: rgb(26, 26, 26);
-  margin: 20px 0px 20px 15px;
-  border: 0.3rem solid rgb(26, 26, 26);
-  box-sizing: border-box;
-}
-
-.container ul li div {
-  margin-bottom: 0.3rem;
-}
-.container ul li div.portal {
-  margin-bottom: 0rem;
+  font-size: 4rem;
 }
 
 .tituloNombre {
   width: 100%;
-  height: 5rem;
-  line-height: 5rem;
+  height: 3rem;
+  line-height: 3rem;
   text-align: center;
-  font-size: 4.2rem;
+  font-size: 2.3rem;
 }
 
 .tituloRich{
@@ -72,41 +41,19 @@ html {
   background: rgb(255, 169, 169);
 }
 
-.imagen {
-  width: 100%;
-  height: 8rem;
-  line-height: 50px;
-  background-size: cover;
-}
-
-.imagenRich{
-  
-  background-image: url(/img/rich.jpg);
-  background-position-y: -5rem;
-
-}
-
 .titulo {
   width: 100%;
-  background: rgb(255, 217, 0);
+  background: #FFB23A;
   text-align: center;
   color: black;
-  font-size: 2.4rem;
+  font-size: 1.7rem;
 }
 
-.container ul li .vida {
-  width: 100%;
-  background: rgb(32, 32, 32);
-  text-align: center;
-  color: black;
-  font-size: 3rem;
-  height: 3rem;
-  display: flex;
-}
 .vida img{
-  width: 25rem;
+  width: 17rem;
   display: block;
   margin:auto;
+  padding: 0.3rem 0rem;
 }
 ti {
   width: 16%;
@@ -114,8 +61,8 @@ ti {
   display: inline-block;
   color: white;
   text-align: center;
-  font-size: 1.6rem;
-  padding:1rem 0rem;
+  font-size: 1.4rem;
+  padding:0.4rem 0rem;
 }
 
 div.noenchant {
@@ -128,15 +75,13 @@ img.grayimg {
   filter: grayscale(1);
 }
 ti img {
-  width: 3rem;
+  width: 2rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .tiVacio {
-  border: 0rem;
-  height: 1rem;
   display: none;
 }
 div.minerales,div.curacion,div.nether,div.portal,div.misc,div.pociones,div.inventario {
@@ -144,9 +89,9 @@ div.minerales,div.curacion,div.nether,div.portal,div.misc,div.pociones,div.inven
   background: rgb(32, 32, 32);
   text-align: center;
   color: white;
-  font-size: 2rem;
+  font-size: 1.6rem;
   display: flex;
-  padding: 1rem 0rem;
+  padding: 0.6rem 0rem;
   
   justify-content: center;
   align-items: center;
@@ -203,12 +148,7 @@ div#NOMARGIN{
     width: 80%;
     margin: 40px auto;
   }
-
-  .telefono {
-    display:inline-block;
-  }
 }
-
 
 
 
@@ -222,12 +162,14 @@ div#NOMARGIN{
 
 #kiko-slider > ul, li {
     padding: 0;
-    margin: 0;
+    margin: auto;
     list-style: none;
+    max-width: 90%;
 }
 
 #kiko-slider > ul.slider{
   position: relative;
+  margin-top: 3%;
   width: 100%;
 }
 
@@ -261,7 +203,11 @@ div#NOMARGIN{
 
 #kiko-slider > .menu{
   text-align: center;
-  margin: 20px;
+  margin: 10px;
+  position: absolute;
+  top: 55rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #kiko-slider > .menu li{
@@ -275,14 +221,14 @@ div#NOMARGIN{
   text-decoration: none;
   border: 0.3rem solid #ccbe00;
   border-radius: 20%;
-  margin: 1rem;
-  width: 5rem;
+  margin: 0rem 0.8rem;
+  width: 4rem;
 }
 
 .stats {
   display: block;
   list-style: none;
-  width: 40rem;
+  width: 33rem;
   background: rgb(26, 26, 26);
   margin-bottom: 2rem;;
   border: 0.3rem solid rgb(26, 26, 26);
@@ -299,7 +245,7 @@ div#NOMARGIN{
 
 
 .espacioBlanco{
-  height: 4rem;
+  height: 1rem;
 }
 /**tr.armadura > ti 
   margin-bottom: 12rem;
@@ -318,4 +264,143 @@ div#NOMARGIN{
 
 .stats>div{
   padding: 0.5rem 0rem;
+}
+
+.logo{
+  position: absolute;
+  width: 25%;
+}
+
+
+
+/** Cosas de Sidebar **/
+#sidebar-body {
+  overflow-x: hidden;
+}
+
+.sidebar {
+  /*background: #42b078;*/
+  position: fixed;
+  right: -22rem;
+  width: 25rem;
+  transition: all 0.3s;
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 5rem;
+  background-color: #55582e;
+}
+h3{
+font-size: 2.4rem;
+display: inline-block;
+top: 10%;
+margin: 0 0 0 0.4rem;
+}
+.sidebar:hover {
+  right: 0;
+}
+
+.grupo {
+position: relative;
+display: flex;
+flex-direction: column;
+margin-top: 130vh;
+}
+
+.texto{
+font-size: 1.4rem;
+display: inline-block;
+top: 10%;
+margin-left: 0.5rem;
+margin-top: 0rem;
+}
+
+.break{
+height: 2rem;
+}
+
+/* unvisited link */
+a.creditos:link {
+color: white;
+}
+
+/* visited link */
+a.creditos:visited {
+color: white;
+}
+
+/* mouse over link */
+a.creditos:hover {
+color: rgb(158, 158, 158);
+}
+
+/* selected link */
+a.creditos:active {
+color: rgb(126, 126, 126);
+}
+
+.episodios{
+background-color: #6e7149;
+font-size: 1.2rem;
+padding: 0.8rem 0.3rem;
+margin: 2rem 0rem;
+max-width: 18rem;
+}
+
+/* unvisited link */
+a.linkEpisodios:link {
+color: white;
+}
+
+/* visited link */
+a.linkEpisodios:visited {
+color: white;
+}
+
+/* mouse over link */
+a.linkEpisodios:hover {
+color: rgb(46, 46, 46);
+}
+
+.episodios:hover{
+background-color: #999c64;
+}
+
+/* selected link */
+a.linkEpisodios:active {
+color: rgb(126, 126, 126);
+}
+
+.list-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.list-group-item {
+  position: relative;
+  display: inline-block;
+  padding: 0.75rem 0rem;
+  margin-bottom: -1px;
+  background-color: #55582e;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  height: 100vh;
+}
+
+
+.sidebar::before {
+    content: "< ";
+    margin-right: 1rem;
+    line-height: 100vh;
+    background-color: #6e7149;
+    padding:100vh 0.8rem ;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
 }
