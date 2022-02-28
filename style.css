@@ -189,17 +189,9 @@ div#NOMARGIN{
     opacity: 0;
     width: inherit;
     height: inherit;
-    transition: opacity .5s;
 }
 
 
-#kiko-slider > ul.slider li:first-child {
-    opacity: 0; 
-}
-
-#kiko-slider > ul.slider li:target {
-    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
-}
 
 #kiko-slider > .menu{
   text-align: center;
